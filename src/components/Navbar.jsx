@@ -20,7 +20,7 @@ export default function Navbar() {
     const [picture, setPicture] = useState('');
     const { user } = useAuthContext();
     const userEmail = user.email;
-    const backendBaseUrl = 'http://localhost:5555'; 
+    const backendBaseUrl = 'https://techlib-back.onrender.com'; 
 
     const {logout} = useLogout();
     const handleClick = () => {
@@ -28,7 +28,7 @@ export default function Navbar() {
     }
 
     useEffect(() => {
-      axios.get(`http://localhost:5555/${userEmail}` , {
+      axios.get(`https://techlib-back.onrender.com/${userEmail}` , {
         headers: {
           'Authorization': `Bearer ${user.token}`
         }

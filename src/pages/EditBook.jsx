@@ -18,11 +18,11 @@ function EditBook() {
     const {id} = useParams();
     const { enqueueSnackbar } = useSnackbar();
     const { user } = useAuthContext();
-    const backendBaseUrl = 'http://localhost:5555'; 
+    const backendBaseUrl = 'https://techlib-back.onrender.com'; 
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`http://localhost:5555/books/${id}` , {
+        axios.get(`https://techlib-back.onrender.com/books/${id}` , {
           headers: {
             'Authorization': `Bearer ${user.token}`
           }
@@ -58,7 +58,7 @@ function EditBook() {
 
         setLoading(true);
         axios
-          .put(`http://localhost:5555/books/${id}`, data , {
+          .put(`https://techlib-back.onrender.com/books/${id}`, data , {
             headers: {
               'Authorization': `Bearer ${user.token}`
             }

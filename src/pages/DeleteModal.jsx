@@ -17,7 +17,7 @@ const DeleteModal = ({ book, onClose }) => {
         const handleDeleteBook = () => {
           setLoading(true);
           axios
-            .delete(`http://localhost:5555/books/${book._id}` , {
+            .delete(`https://techlib-back.onrender.com/books/${book._id}` , {
               headers: {
                 'Authorization': `Bearer ${user.token}`
               }

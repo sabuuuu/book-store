@@ -18,11 +18,11 @@ const EditProfile = () => {
   const { user } = useAuthContext();
   const userEmail = user.email;
 
-  const backendBaseUrl = 'http://localhost:5555'; 
+  const backendBaseUrl = 'https://techlib-back.onrender.com'; 
 
   useEffect(() => {
     setLoading(true);
-    axios.get(`http://localhost:5555/${userEmail}` , {
+    axios.get(`https://techlib-back.onrender.com/${userEmail}` , {
       headers: {
         'Authorization': `Bearer ${user.token}`
       }
@@ -52,7 +52,7 @@ const EditProfile = () => {
 
     setLoading(true);
 
-    axios.put(`http://localhost:5555/${userEmail}`, formData, {
+    axios.put(`https://techlib-back.onrender.com/${userEmail}`, formData, {
       headers: {
         'Authorization': `Bearer ${user.token}`
       }

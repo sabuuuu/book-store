@@ -13,12 +13,12 @@ function Profile() {
   const { user } = useAuthContext();
   const userEmail = user.email;
 
-  const backendBaseUrl = 'http://localhost:5555'; 
+  const backendBaseUrl = 'https://techlib-back.onrender.com'; 
 
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/${userEmail}`)
+      .get(`https://techlib-back.onrender.com/${userEmail}`)
       .then((response) => {
 
         setUserData(response.data);
