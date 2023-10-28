@@ -5,7 +5,7 @@ import './index.css'
 import { SnackbarProvider } from 'notistack';
 import {BrowserRouter} from 'react-router-dom';
 
-import {AuthContextProvider } from './src/context/AuthContext.jsx'
+import {AuthContextProvider } from './context/AuthContext.jsx'
 import {disableReactDevTools} from '@fvilers/disable-react-devtools';
 
 disableReactDevTools();
