@@ -17,7 +17,7 @@ export const authReducer = (state , action) => {
     }
 }
 
-export const AuthContextProvider = ({children}) => {
+export default  AuthContextProvider = ({children}) => {
     const [state , dispatch] = useReducer(authReducer ,{
         user: null
     });
