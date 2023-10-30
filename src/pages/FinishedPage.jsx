@@ -4,7 +4,7 @@ import Spinner from "../components/Spinner";
 import BooksCard from "../components/home/BooksCard";
 import useAuthContext from "../hooks/useAuthContext";
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Footer from '../components/footer';
 
 function FinishedPage() {
   const [books, setBooks] = useState([]);
