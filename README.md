@@ -10,3 +10,6 @@ Book Store is a frontend application that complements the "Store Backend" to hel
 
 ## Live view 
 Check out the live view of the Book Store frontend: <a href="https://biblio-tech.onrender.com" target="_blank"> Demo </a>
+
+### Contributing
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository.
