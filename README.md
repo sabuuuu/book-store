@@ -1,4 +1,4 @@
-# Book Store - Personal Reading List (Frontend)
+# Book Store - Personal Reading List (Frontend)    
 Book Store is a frontend application that complements the "Store Backend" to help you manage your personal reading list. This project allows users to interact with their reading list, view, and organize books they plan to read, currently reading, or have already read.
 
 ## Features
